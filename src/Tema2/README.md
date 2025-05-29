@@ -1,0 +1,88 @@
+Tema 2: Solución de Ecuaciones
+-------------------------
+Introducción General
+-------------------------
+Los métodos iterativos permiten encontrar raíces de ecuaciones no lineales mediante aproximaciones sucesivas. Cada método tiene diferentes características de convergencia y aplicabilidad.
+
+-------------------------
+Método de Bisección
+-------------------------
+Divide repetidamente el intervalo a la mitad hasta encontrar la raíz.
+
+-------------------------
+Pseudocódigo:
+-------------------------
+```
+def biseccion(f, a, b, tol):
+    while (b-a) > tol:
+        c = (a+b)/2
+        if f(c) == 0: return c
+        if f(a)*f(c) < 0: b = c
+        else: a = c
+    return (a+b)/2
+```  
+ 
+-------------------------
+Método de Newton-Raphson
+-------------------------
+
+Usa derivadas para converger rápidamente a la raíz.
+
+-------------------------
+Pseudocódigo:
+-------------------------
+```
+def newton(f, df, x0, tol):
+    while abs(f(x0)) > tol:
+        x0 = x0 - f(x0)/df(x0)
+    return x0
+    
+```
+-------------------------
+Método de la Secante
+-------------------------
+Aproxima la derivada usando diferencias finitas.
+
+-------------------------
+Pseudocódigo:
+-------------------------
+```
+def secante(f, x0, x1, tol):
+    while abs(f(x1)) > tol:
+        x2 = x1 - f(x1)*(x1-x0)/(f(x1)-f(x0))
+        x0, x1 = x1, x2
+    return x1
+```
+-------------------------
+Método de Punto Fijo
+-------------------------
+Transforma f(x)=0 en x=g(x) para iteraciones.
+
+-------------------------
+Pseudocódigo:
+-------------------------
+```
+def punto_fijo(g, x0, tol):
+    while True:
+        x1 = g(x0)
+        if abs(x1-x0) < tol: return x1
+        x0 = x1
+```
+-------------------------
+Regla Falsa
+-------------------------
+Versión mejorada de bisección que usa interpolación lineal.
+
+-------------------------
+Pseudocódigo:
+-------------------------
+```
+def regla_falsa(f, a, b, tol):
+    while abs(b-a) > tol:
+        c = (a*f(b)-b*f(a))/(f(b)-f(a))
+        if f(c) == 0: return c
+        if f(a)*f(c) < 0: b = c
+        else: a = c
+    return c
+```  
+-------------------------
