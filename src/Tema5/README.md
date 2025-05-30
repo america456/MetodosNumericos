@@ -2,19 +2,20 @@ Tema 5: Interpolación y ajuste de Funciones
 ----------------
 Introducción
 ----------------
+
 La interpolación y el ajuste de funciones son técnicas fundamentales en métodos numéricos para estimar valores intermedios entre datos conocidos y modelar relaciones entre variables. Este tema cubre métodos para construir funciones que pasen exactamente por puntos dados (interpolación) o que aproximen conjuntos de datos con posible ruido experimental (ajuste).
+
 ----------------
 Métodos de Interpolación Lineal
 ----------------
 
 Conecta dos puntos adyacentes con una línea recta. Es el método más simple de interpolación.
+
 ----------------
 Fórmula:
 ----------------
 
-`f(x) ≈ y₀ + (y₁ - y₀)/(x₁ - x₀) * (x - x₀)
-donde (x₀,y₀) y (x₁,y₁) son los puntos conocidos adyacentes a x.`
-
+`f(x) ≈ y₀ + (y₁ - y₀)/(x₁ - x₀) * (x - x₀)`
 ----------------
 Pseudocódigo:
 ----------------
@@ -27,6 +28,7 @@ Interpolación Polinómica
 ----------------
 
 Encuentra un polinomio único de grado n-1 que pasa exactamente por n puntos.
+
 ----------------
 Fórmula 
 ----------------
@@ -55,7 +57,9 @@ def lagrange(x, puntos):
 ----------------
 Método de Correlación
 ----------------
+
 Mide la fuerza y dirección de la relación lineal entre dos variables mediante el coeficiente de correlación de Pearson.
+
 ----------------
 Fórmula :
 ----------------
@@ -80,11 +84,13 @@ def correlacion(x, y):
 ----------------
 Método de Regresión Lineal
 ----------------
+
 Encuentra la línea recta que mejor ajusta un conjunto de puntos minimizando la suma de los cuadrados de los residuos.
+
 ----------------
-Fórmulas (Recta y = a + bx):
+Fórmulas:
 ----------------
-`b = [nΣ(xy) - ΣxΣy] / [nΣx² - (Σx)²]
+`b = [nΣ(xy) - ΣxΣy] / [nΣx² - (Σx)²],
 a = ȳ - b*x̄`
 ----------------
 Pseudocódigo:
@@ -104,15 +110,19 @@ def regresion_lineal(x, y):
 ----------------------------
 Método de Mínimos Cuadrados 
 -----------------------------
+
 Ajusta cualquier modelo lineal en sus parámetros minimizando la suma de los cuadrados de las diferencias entre los datos observados y los predichos.
+
 ---------------------
-Formulación Matricial:
+Fórmula:
 ----------------------
+
 `Si y ≈ Xβ, entonces β = (XᵀX)⁻¹Xᵀy
 donde X es la matriz de diseño y β el vector de parámetros.`
+
 ----------------
 Pseudocódigo:
-----------------
+-----------------
 ```
 import numpy as np
 
@@ -127,4 +137,4 @@ def minimos_cuadrados(x, y, grado):
     return beta[::-1]  # Coeficientes de mayor a menor grado
 
 ```
-----------------
+---------------------
