@@ -88,8 +88,9 @@ def error_truncamiento(exacto, terminos):
 ------------------------------
 Error de Formulación
 ------------------------------
-Concepto:
+
 Surge al simplificar un modelo matemático del problema real.
+
 ------------------------------
 Fórmula:
 ------------------------------
@@ -118,4 +119,5 @@ def digitos_significativos(num):
     cadena = str(num).replace('.','').lstrip('0')
     return len(cadena) if cadena else 0
 ```
+------------------------------
 ------------------------------
