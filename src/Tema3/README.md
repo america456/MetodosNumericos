@@ -31,6 +31,9 @@ def gaussiana(A, b):
         x[i] /= A[i][i]
     return x
 ```
+------------------------
+[Programa Metodo de Eliminacion Gaussiana](https://github.com/america456/MetodosNumericos/blob/bc6f02c295b0635d6b377fb8d582a2f1ccfa7a37/src/Tema3/MetodoEliminacionGaussiana.java
+)  
 -------------------------
 Metodo de Gauss-Jordan
 -------------------------
@@ -59,6 +62,8 @@ def gauss_jordan(A, b):
     return [row[n] for row in M]
 ```
 -------------------------
+[Programa Metodo Gauss-Jordan](https://github.com/america456/MetodosNumericos/blob/bc6f02c295b0635d6b377fb8d582a2f1ccfa7a37/src/Tema3/MetodoGaussJordan.java)
+-------------------------
 Metodo de Gauss-Seidel
 -------------------------
 Método iterativo que usa valores actualizados inmediatamente.
@@ -81,6 +86,9 @@ def gauss_seidel(A, b, tol, max_iter):
     return x
 ```
 -------------------------
+[Programa Metodo de Gauss-Seidel](https://github.com/america456/MetodosNumericos/blob/bc6f02c295b0635d6b377fb8d582a2f1ccfa7a37/src/Tema3/MetodoGaussSeidel.java
+)
+-------------------------
 Metodo Jacobi
 -------------------------
 Método iterativo que usa valores de la iteración anterior.
@@ -102,4 +110,6 @@ def jacobi(A, b, tol, max_iter):
         x = x_new.copy()
     return x
 ```
+-------------------------
+[Programa Metodo Jacobi](https://github.com/america456/MetodosNumericos/blob/bc6f02c295b0635d6b377fb8d582a2f1ccfa7a37/src/Tema3/MetodoJacobi.java)
 -------------------------
