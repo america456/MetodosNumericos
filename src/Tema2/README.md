@@ -25,7 +25,8 @@ def biseccion(f, a, b, tol):
         else: a = c
     return (a+b)/2
 ```  
- 
+------------------------
+[Programa Método de Bisección](https://github.com/america456/MetodosNumericos/blob/2517d7c55c90960bf4d1d731f10cd401af28713b/src/Tema2/MetodoBiseccion.java)
 -------------------------
 Método de Newton-Raphson
 -------------------------
@@ -47,6 +48,8 @@ def newton(f, df, x0, tol):
     
 ```
 -------------------------
+[Programa Metodo Newton-Raphson](https://github.com/america456/MetodosNumericos/blob/2517d7c55c90960bf4d1d731f10cd401af28713b/src/Tema2/NewtonRapshon.java)
+-------------------------
 Método de la Secante
 -------------------------
 Aproxima la derivada usando diferencias finitas.
@@ -65,6 +68,8 @@ def secante(f, x0, x1, tol):
         x0, x1 = x1, x2
     return x1
 ```
+-------------------------
+[Programa Método de la Secante](https://github.com/america456/MetodosNumericos/blob/2517d7c55c90960bf4d1d731f10cd401af28713b/src/Tema2/MetodoSecante.java)
 -------------------------
 Método de Punto Fijo
 -------------------------
@@ -86,6 +91,8 @@ def punto_fijo(g, x0, tol):
         x0 = x1
 ```
 -------------------------
+[Programa Metodo de Punto Fijo](https://github.com/america456/MetodosNumericos/blob/2517d7c55c90960bf4d1d731f10cd401af28713b/src/Tema2/PuntoFijo.java)
+-------------------------
 Regla Falsa
 -------------------------
 Versión mejorada de bisección que usa interpolación lineal.
@@ -105,5 +112,7 @@ def regla_falsa(f, a, b, tol):
         if f(a)*f(c) < 0: b = c
         else: a = c
     return c
-```  
+```
+-------------------------
+[Programa Regla Falsa](https://github.com/america456/MetodosNumericos/blob/2517d7c55c90960bf4d1d731f10cd401af28713b/src/Tema2/ReglaFalsa.java)
 -------------------------
