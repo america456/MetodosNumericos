@@ -3,7 +3,7 @@ Tema 5: Interpolación y ajuste de Funciones
 Introducción
 ----------------
 
-La interpolación y el ajuste de funciones son técnicas fundamentales en métodos numéricos para estimar valores intermedios entre datos conocidos y modelar relaciones entre variables. Este tema cubre métodos para construir funciones que pasen exactamente por puntos dados (interpolación) o que aproximen conjuntos de datos con posible ruido experimental (ajuste).
+La interpolación y el ajuste de funciones son técnicas fundamentales en métodos numéricos para estimar valores intermedios entre datos conocidos y modelar relaciones entre variables. Este tema cubre métodos para construir funciones que pasen exactamente por puntos dados (interpolación) o que aproximen conjuntos de datos con posible ruido experimental.
 
 ----------------
 Métodos de Interpolación Lineal
@@ -23,6 +23,9 @@ Pseudocódigo:
 def interpolacion_lineal(x, x0, y0, x1, y1):
     return y0 + (y1 - y0)/(x1 - x0) * (x - x0)
 ```
+----------------
+[Programa de Métodos de Interpolación Lineal](https://github.com/america456/MetodosNumericos/blob/00bfab23501f40d9501261db4a4970f5df923099/src/Tema5/InterpolacionLineal.java
+)
 -----------------
 Interpolación Polinómica 
 ----------------
@@ -55,6 +58,9 @@ def lagrange(x, puntos):
     
 ```
 ----------------
+[Programa de Interpolación Polinómica](https://github.com/america456/MetodosNumericos/blob/00bfab23501f40d9501261db4a4970f5df923099/src/Tema5/InterpolacionPolinomica.java
+)
+----------------
 Método de Correlación
 ----------------
 
@@ -82,6 +88,8 @@ def correlacion(x, y):
     return numerador / (denominador_x * denominador_y)**0.5
 ```
 ----------------
+[Programa de Método de Correlación](https://github.com/america456/MetodosNumericos/blob/00bfab23501f40d9501261db4a4970f5df923099/src/Tema5/MetodoCorrelacion.java)
+----------------
 Método de Regresión Lineal
 ----------------
 
@@ -94,6 +102,7 @@ Fórmulas:
 a = ȳ - b*x̄`
 ----------------
 Pseudocódigo:
+----------------
 ```
 def regresion_lineal(x, y):
     n = len(x)
@@ -107,6 +116,8 @@ def regresion_lineal(x, y):
     
     return a, b  # Devuelve los coeficientes a y b
 ```
+---------------------------
+[Programa de Método de Regresión Lineal](https://github.com/america456/MetodosNumericos/blob/00bfab23501f40d9501261db4a4970f5df923099/src/Tema5/MetodoDeRegresion.java)
 ----------------------------
 Método de Mínimos Cuadrados 
 -----------------------------
@@ -137,4 +148,7 @@ def minimos_cuadrados(x, y, grado):
     return beta[::-1]  # Coeficientes de mayor a menor grado
 
 ```
+--------------------
+[Programa de Método de Mínimos Cuadrados](https://github.com/america456/MetodosNumericos/blob/00bfab23501f40d9501261db4a4970f5df923099/src/Tema5/MetodoMinimosCuadrados.java
+) 
 ---------------------
