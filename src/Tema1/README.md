@@ -49,6 +49,8 @@ def error_relativo(Vr, Va):
     return abs(Vr - Va) / abs(Vr)
 ```
 ------------------------------
+[Programa Error Relativo](https://github.com/america456/MetodosNumericos/blob/e7b2ae3c928fab1e49e6ad020dd651818d835bca/src/Tema1/ErrorRelativo.java)
+------------------------------
  Error de Redondeo
 ------------------------------
 
@@ -67,6 +69,8 @@ def error_redondeo(exacto, decimales):
     redondeado = round(exacto, decimales)
     return abs(exacto - redondeado)
 ```
+------------------------------
+[Programa Error Redondeo](https://github.com/america456/MetodosNumericos/blob/e7b2ae3c928fab1e49e6ad020dd651818d835bca/src/Tema1/ErrorRedondeo.java)
 ------------------------------
 Error de Truncamiento
 ------------------------------
@@ -87,6 +91,8 @@ def error_truncamiento(exacto, terminos):
     aproximado = sumar_serie(exacto, terminos)  # Función hipotética
     return abs(exacto - aproximado)
 ```
+-----------------------------
+[Programa Error Truncamiento](https://github.com/america456/MetodosNumericos/blob/e7b2ae3c928fab1e49e6ad020dd651818d835bca/src/Tema1/ErrorTruncamiento.java)
 ------------------------------
 Error de Formulación
 ------------------------------
@@ -106,6 +112,9 @@ Pseudocódigo:
 def error_modelo(real, modelo):
     return abs(real - modelo)
 ```
+-----------------------------
+[Programa Error Formulacion](https://github.com/america456/MetodosNumericos/blob/e7b2ae3c928fab1e49e6ad020dd651818d835bca/src/Tema1/ErrorFormulacion.java
+)
 ------------------------------
 Error Significativo
 ------------------------------
@@ -122,4 +131,5 @@ def digitos_significativos(num):
     return len(cadena) if cadena else 0
 ```
 ------------------------------
+[Programa Error Significativo](https://github.com/america456/MetodosNumericos/blob/e7b2ae3c928fab1e49e6ad020dd651818d835bca/src/Tema1/ErrorSignificativo.java)
 ------------------------------
