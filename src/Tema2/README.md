@@ -10,6 +10,10 @@ Método de Bisección
 Divide repetidamente el intervalo a la mitad hasta encontrar la raíz.
 
 -------------------------
+Fórmula:
+-------------------------
+`c = (a + b)/2`
+-----------------------
 Pseudocódigo:
 -------------------------
 ```
@@ -29,6 +33,10 @@ Método de Newton-Raphson
 Usa derivadas para converger rápidamente a la raíz.
 
 -------------------------
+Fórmula :
+-------------------------
+`x_{n+1} = x_n - f(x_n)/f'(x_n)`
+------------------------
 Pseudocódigo:
 -------------------------
 ```
@@ -44,6 +52,10 @@ Método de la Secante
 Aproxima la derivada usando diferencias finitas.
 
 -------------------------
+Fórmula :
+-------------------------
+`x_{n+1} = x_n - f(x_n)[(x_n - x_{n-1})/(f(x_n) - f(x_{n-1}))]`
+------------------------
 Pseudocódigo:
 -------------------------
 ```
@@ -57,6 +69,11 @@ def secante(f, x0, x1, tol):
 Método de Punto Fijo
 -------------------------
 Transforma f(x)=0 en x=g(x) para iteraciones.
+
+-------------------------
+Fórmula:
+------------------------
+`x_{n+1} = g(x_n)`
 
 -------------------------
 Pseudocódigo:
@@ -73,6 +90,10 @@ Regla Falsa
 -------------------------
 Versión mejorada de bisección que usa interpolación lineal.
 
+-------------------------
+Fórmula:
+------------------------
+`c = [a·f(b) - b·f(a)] / [f(b) - f(a)]`
 -------------------------
 Pseudocódigo:
 -------------------------
