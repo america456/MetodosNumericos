@@ -34,6 +34,8 @@ def euler(f, t0, y0, h, n_steps):
     return solution
 ```
 --------------------------
+[Programa de Método de Euler](https://github.com/america456/MetodosNumericos/blob/12deb3d4ad1a881018773309d887879364e78efd/src/Tema6/MetodoEuler.java)
+--------------------------
 Método de Taylor
 -------------------------
 
@@ -60,6 +62,8 @@ def taylor_orden2(f, df, t0, y0, h, n_steps):
     return solution
 ```
 -----------------------
+[Programa de Metodo de Taylor](https://github.com/america456/MetodosNumericos/blob/12deb3d4ad1a881018773309d887879364e78efd/src/Tema6/MetodoTaylor.java)
+-----------------------
 Métodos de Runge-Kutta
 ----------------------
 
@@ -76,7 +80,7 @@ k4 = h*f(t_n + h, y_n + k3)
 y_{n+1} = y_n + (k1 + 2k2 + 2k3 + k4)/6`
 
 -----------------------
-Pseudocódigo (RK4):
+Pseudocódigo :
 ---------------------
 ```
 def runge_kutta4(f, t0, y0, h, n_steps):
@@ -93,6 +97,9 @@ def runge_kutta4(f, t0, y0, h, n_steps):
         solution.append((t, y))
     return solution
 ```
+--------------------
+[Programa de Metodo Runge-Kutta](https://github.com/america456/MetodosNumericos/blob/12deb3d4ad1a881018773309d887879364e78efd/src/Tema6/MetodoRungeKutta.java
+)
 --------------------
 Métodos Multipaso
 --------------------
@@ -120,6 +127,8 @@ def adams_bashforth2(f, t0, t1, y0, y1, h, n_steps):
         solution.append((next_t, next_y))
     return solution
 ```
+---------------------
+[Programa de Metodos Multipaso](https://github.com/america456/MetodosNumericos/blob/12deb3d4ad1a881018773309d887879364e78efd/src/Tema6/MetodoDePaso.java)
 ----------------------
 Método de Pasos Múltiples 
 ----------------------
@@ -157,4 +166,6 @@ def predictor_corrector(f, t0, y0, h, n_steps, max_iter=10, tol=1e-6):
         solution.append((t, y))
     return solution
 ```
+-----------------------
+[Programa de Método de Pasos Múltiples](https://github.com/america456/MetodosNumericos/blob/12deb3d4ad1a881018773309d887879364e78efd/src/Tema6/MetodoPasoMultiple.java)
 -----------------------
