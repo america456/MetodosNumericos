@@ -1,6 +1,6 @@
 Tema 4: Diferenciación e Integración Numérica
 ------------------------
-Introducción
+Introducción:
 ------------------------
 
 La integración y diferenciación numérica son herramientas fundamentales en métodos numéricos cuando las soluciones analíticas son difíciles o imposibles de obtener. Este tema cubre los principales métodos para aproximar integrales definidas, esenciales en aplicaciones de ingeniería, física y ciencias computacionales donde se requiere calcular áreas bajo curvas, valores promedio o resolver ecuaciones diferenciales.
@@ -28,6 +28,8 @@ def trapecio(f, a, b, n):
         suma += f(a + i * h)
     return h * suma
 ```
+-----------------------
+[Programa Metodo del Trapecio](https://github.com/america456/MetodosNumericos/blob/cd8219cfe03643af72466ce63ead757cfe3fb0b0/src/Tema4/MetodoTrapecio.java)
 ------------------------
 Método de Simpson 1/3
 ------------------------
@@ -56,6 +58,8 @@ def simpson_13(f, a, b, n):
     return (h / 3) * suma
 ```
 ------------------------
+[Programa de Metodo Simpson Un Tercio](https://github.com/america456/MetodosNumericos/blob/cd8219cfe03643af72466ce63ead757cfe3fb0b0/src/Tema4/SimpsonUnTercio.java)
+------------------------
 Método de Simpson 3/8
 ------------------------
 
@@ -82,6 +86,8 @@ def simpson_38(f, a, b, n):
             suma += 3 * f(a + i * h)
     return (3 * h / 8) * suma
 ```
+-----------------------
+[Programa Metodo Simpson tres octavos](https://github.com/america456/MetodosNumericos/blob/cd8219cfe03643af72466ce63ead757cfe3fb0b0/src/Tema4/SimpsonTresOctavos.java)
 ------------------------
 Cuadratura Gaussiana
 ------------------------
@@ -113,4 +119,6 @@ def gauss_quad(f, a, b, n):
         suma += pesos[i] * f(x)
     return (b-a)/2 * suma
 ```
+------------------------
+[Programa Cuadratura Gaussiana](https://github.com/america456/MetodosNumericos/blob/cd8219cfe03643af72466ce63ead757cfe3fb0b0/src/Tema4/MetodoCuadraturaGaussiana.java)
 ------------------------
