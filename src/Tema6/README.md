@@ -3,11 +3,15 @@ Tema 6: Solución de Ecuaciones Diferenciales
 --------------------------
 Introducción
 --------------------------
+
 La solución numérica de ecuaciones diferenciales es fundamental en la modelización de sistemas físicos, biológicos y de ingeniería. Este tema cubre métodos para aproximar soluciones de ecuaciones diferenciales ordinarias (EDOs) cuando no se pueden obtener soluciones analíticas exactas. Los métodos se dividen en métodos de un paso (como Euler y Runge-Kutta) y métodos multipaso.
+
 --------------------------
 Método de Euler
 --------------------------
+
 El método más simple para resolver EDOs, aproxima la solución mediante una serie de segmentos lineales usando la pendiente en el punto actual.
+
 --------------------------
 Fórmula:
 --------------------------
@@ -32,7 +36,9 @@ def euler(f, t0, y0, h, n_steps):
 --------------------------
 Método de Taylor
 -------------------------
+
 Extensión del método de Euler que usa términos de orden superior en la expansión de Taylor para mayor precisión.
+
 -------------------------
 Fórmula:
 ------------------------
@@ -56,7 +62,9 @@ def taylor_orden2(f, df, t0, y0, h, n_steps):
 -----------------------
 Métodos de Runge-Kutta
 ----------------------
+
 Familia de métodos que evalúan la función en varios puntos dentro del intervalo para obtener mayor precisión sin necesidad de derivadas.
+
 -----------------------
 Fórmula :
 -----------------------
@@ -88,8 +96,10 @@ def runge_kutta4(f, t0, y0, h, n_steps):
 --------------------
 Métodos Multipaso
 --------------------
+
 Usan información de varios pasos anteriores para calcular la solución actual, mejorando la eficiencia pero requiriendo valores iniciales.
--------------------*
+
+-------------------
 Fórmula :
 --------------------
 
@@ -113,7 +123,9 @@ def adams_bashforth2(f, t0, t1, y0, y1, h, n_steps):
 ----------------------
 Método de Pasos Múltiples 
 ----------------------
+
 Combina un método explícito (predictor) con uno implícito (corrector) para mejorar la precisión.
+
 -----------------------
 Fórmula:
 -----------------------
