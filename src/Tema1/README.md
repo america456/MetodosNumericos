@@ -27,6 +27,8 @@ Pseudocódigo:
 def error_absoluto(Vr, Va):
     return abs(Vr - Va)
 ```
+-----------------------------
+[Programa Error Absoluto](https://github.com/america456/MetodosNumericos/blob/dd733a1a336243c5868ca85a019975934bebf853/src/Tema1/ErrorAbsoluto.java)
 ------------------------------
 Error Relativo
 ------------------------------
